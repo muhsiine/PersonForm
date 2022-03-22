@@ -1,5 +1,7 @@
 package com.forms.personform.entities;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
@@ -11,6 +13,8 @@ import java.time.LocalDate;
 
 
 @Entity
+@Getter
+@Setter
 public class Person implements Serializable {
     @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
@@ -18,6 +22,11 @@ public class Person implements Serializable {
     private String firstname;
 
     private String lastname;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate birthday;
+
+    private String address;
 
     public Person() {
     }
@@ -30,49 +39,6 @@ public class Person implements Serializable {
         this.address = address;
     }
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    private LocalDate birthday;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
-    public LocalDate getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    private String address;
 
 }
