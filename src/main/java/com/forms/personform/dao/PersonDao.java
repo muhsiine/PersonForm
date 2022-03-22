@@ -9,8 +9,8 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-public class PersonDao implements IPersonDao{
-    public void saveEmployee(Person employee){
+public class PersonDao implements IPersonDao {
+    public void saveEmployee(Person employee) {
         SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
         session.insert("insertEmployee", employee);
         session.commit();
@@ -18,8 +18,7 @@ public class PersonDao implements IPersonDao{
     }
 
 
-
-    public Person findById(int employeeId){
+    public Person findById(int employeeId) {
         SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
         Person employee = (Person) session.selectOne("findById", employeeId);
         session.commit();
@@ -41,7 +40,7 @@ public class PersonDao implements IPersonDao{
     public List<Person> findPersonByFirstName(String kw) {
         SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
         @SuppressWarnings("unchecked")
-        List<Person> personList = session.selectList("findPersonByFirstName",kw);
+        List<Person> personList = session.selectList("findPersonByFirstName", kw);
         session.commit();
         session.close();
         return personList;
@@ -49,9 +48,14 @@ public class PersonDao implements IPersonDao{
 
     @Override
     public Person insertPerson(String firstname, String lastname,
-                              LocalDate birthday, String address) {
+                               LocalDate birthday, String address) {
         SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
-        Person person = new Person(null,firstname,lastname,birthday,address);
+        Person person = Person.builder()
+                .firstname(firstname)
+                .lastname(lastname)
+                .birthday(birthday)
+                .address(address)
+                .build();
         session.insert("insertPerson", person);
         session.commit();
         session.close();
