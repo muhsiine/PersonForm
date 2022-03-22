@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias type="com.forms.PersonForm.entities.Person" alias="Person"/>
+        <typeAlias type="com.forms.personform.entities.Person" alias="Person"/>
     </typeAliases>
 
     <environments default="development">

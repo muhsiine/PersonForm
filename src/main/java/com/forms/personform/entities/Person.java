@@ -1,4 +1,4 @@
-package com.forms.PersonForm.entities;
+package com.forms.personform.entities;
 
 import org.springframework.format.annotation.DateTimeFormat;
 

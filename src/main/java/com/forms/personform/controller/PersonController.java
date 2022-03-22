@@ -1,8 +1,8 @@
-package com.forms.PersonForm.Controller;
+package com.forms.personform.controller;
 
 
-import com.forms.PersonForm.entities.Person;
-import com.forms.PersonForm.service.PersonApi;
+import com.forms.personform.entities.Person;
+import com.forms.personform.service.PersonApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,14 +18,10 @@ public class PersonController {
     private PersonApi personService;
 
     @GetMapping("/index")
-    public String index(Model model,
+    public String index(Model model, @RequestParam(name="page",defaultValue = "0")int page,
                         @RequestParam(name="keyword",defaultValue = "")String kw){
-        List<Person> peoplePages = personService.getPeople(1);
-        System.out.println(peoplePages.toString());
-        //System.out.println(personService.getPeople(page).size());
+        List<Person> peoplePages = personService.findByKeyword(kw,page);
         model.addAttribute("listPeople",peoplePages);
-        //model.addAttribute("pages",new int[peoplePages.getTotalPages()]);
-        //model.addAttribute("currentPage",page);
 
         return "people";
     }

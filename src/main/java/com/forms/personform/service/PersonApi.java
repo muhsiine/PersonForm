@@ -1,8 +1,8 @@
-package com.forms.PersonForm.service;
+package com.forms.personform.service;
 
-import com.forms.PersonForm.DAO.IPersonDao;
+import com.forms.personform.dao.IPersonDao;
 
-import com.forms.PersonForm.entities.Person;
+import com.forms.personform.entities.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Service;
@@ -16,18 +16,14 @@ public class PersonApi implements IPersonApi{
     @Autowired
     private IPersonDao personDao;
 
-    private List<Person> peoplePage;
-
     @Override
     public List<Person> getPeople(int page) {
         return personDao.getAllPerson();
     }
 
     @Override
-    public List<Person> findByKeyword(String kw) {
-        peoplePage = personDao.findPersonByFirstName(kw);
-        //peoplePage = personDao.findPersonByFirstName(kw,PageRequest.of(page,5));
-        return peoplePage;
+    public List<Person> findByKeyword(String kw,int page) {
+        return  personDao.findPersonByFirstName(kw);
     }
 
     @Override

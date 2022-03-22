@@ -4,31 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf862d0-e73b-4840-9410-552ce8f81ee2" name="Changes" comment="Integrated MyBatis(search+pagination not working yet)">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3ded1f84f513a5011aa00c53c6600bc567097300" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="0bf862d0-e73b-4840-9410-552ce8f81ee2" name="Changes" comment="Functional search (first name search)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonForm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonForm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/Controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/Controller/PersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/DAO/PersonRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/PersonFormApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/PersonFormApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/entities/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/IPersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/IPersonApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/PersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/PersonApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/Controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/DAO/IPersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/IPersonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/DAO/IPersonDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/IPersonDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/DAO/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/PersonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/PersonFormApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/PersonFormApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/resource/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/resource/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/IPersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/service/IPersonApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/PersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/service/PersonApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/util/MyBatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/util/MyBatisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/forms/PersonForm/PersonFormApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/forms/personform/PersonFormApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/Controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/Controller/PersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/PersonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/PersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/PersonDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/PersonFormApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/PersonFormApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/entities/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/entities/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/resource/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/resource/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/IPersonApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/IPersonApi.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/PersonApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/PersonApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/people.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/people.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/util/MyBatisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/util/MyBatisUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/forms/PersonForm/PersonFormApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/forms/PersonForm/PersonFormApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="26Q35A7UNDUOe92ysxhcsW68HjX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,11 +91,11 @@
   </component>
   <component name="RunManager">
     <configuration name="PersonFormApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.forms.PersonForm.PersonFormApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.forms.personform.PersonFormApplication" />
       <module name="PersonForm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.forms.PersonForm.*" />
+          <option name="PATTERN" value="com.forms.personform.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,6 +118,21 @@
       <option name="presentableId" value="Default" />
       <updated>1647341800903</updated>
     </task>
+    <task id="LOCAL-00001" summary="Integrated MyBatis(search+pagination not working yet)">
+      <created>1647938337574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647938337575</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Integrated MyBatis(search+pagination not working yet)">
+      <created>1647938375541</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647938375541</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +140,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="39" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="41" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="40" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -125,7 +157,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Integrated MyBatis(search+pagination not working yet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrated MyBatis(search+pagination not working yet)" />
+    <MESSAGE value="Functional search (first name search)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functional search (first name search)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -138,6 +171,11 @@
           <properties class="java.lang.IllegalArgumentException" package="java.lang" />
           <option name="timeStamp" value="2" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/forms/personform/service/PersonApi.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

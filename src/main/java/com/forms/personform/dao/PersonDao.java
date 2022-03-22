@@ -1,12 +1,8 @@
-package com.forms.PersonForm.DAO;
+package com.forms.personform.dao;
 
-import com.forms.PersonForm.entities.Person;
-import com.forms.PersonForm.util.MyBatisUtil;
-import org.apache.ibatis.annotations.Param;
+import com.forms.personform.entities.Person;
+import com.forms.personform.util.MyBatisUtil;
 import org.apache.ibatis.session.SqlSession;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
@@ -45,8 +41,7 @@ public class PersonDao implements IPersonDao{
     public List<Person> findPersonByFirstName(String kw) {
         SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
         @SuppressWarnings("unchecked")
-        List<Person> personList = session.selectList("findPersonByFirstName");
-       // Page<Person> page = new PageImpl<>(personList);
+        List<Person> personList = session.selectList("findPersonByFirstName",kw);
         session.commit();
         session.close();
         return personList;

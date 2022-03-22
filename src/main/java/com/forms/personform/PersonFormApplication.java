@@ -1,4 +1,4 @@
-package com.forms.PersonForm;
+package com.forms.personform;
 
 
 import org.springframework.boot.SpringApplication;

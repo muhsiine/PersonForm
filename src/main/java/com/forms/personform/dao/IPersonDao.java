@@ -1,10 +1,7 @@
-package com.forms.PersonForm.DAO;
+package com.forms.personform.dao;
 
-import com.forms.PersonForm.entities.Person;
+import com.forms.personform.entities.Person;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;
 import java.util.List;

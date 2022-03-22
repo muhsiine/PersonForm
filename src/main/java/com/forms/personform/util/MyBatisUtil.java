@@ -1,4 +1,4 @@
-package com.forms.PersonForm.util;
+package com.forms.personform.util;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -12,7 +12,7 @@ public class MyBatisUtil {
     static {
         Reader reader;
         try {
-            reader = Resources.getResourceAsReader("com/forms/PersonForm/resource/mybatis-config.xml");
+            reader = Resources.getResourceAsReader("com/forms/personform/resource/mybatis-config.xml");
             sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
         } catch (IOException e) {
             e.printStackTrace();
