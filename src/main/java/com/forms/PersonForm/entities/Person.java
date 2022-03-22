@@ -1,31 +1,37 @@
 package com.forms.PersonForm.entities;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
+
 
 @Entity
 public class Person implements Serializable {
     @Id @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private Date birthday;
-    private String address;
+
+    private String firstname;
+
+    private String lastname;
 
     public Person() {
     }
 
-    public Person(Long id, String firstName, String lastName, Date birthday, String address) {
+    public Person(Long id, String firstname, String lastname, LocalDate birthday, String address) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.birthday = birthday;
         this.address = address;
     }
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private LocalDate birthday;
 
     public Long getId() {
         return id;
@@ -35,27 +41,27 @@ public class Person implements Serializable {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-    public Date getBirthday() {
+    public LocalDate getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(LocalDate birthday) {
         this.birthday = birthday;
     }
 
@@ -66,4 +72,7 @@ public class Person implements Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    private String address;
+
 }

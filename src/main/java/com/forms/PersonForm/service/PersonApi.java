@@ -1,24 +1,44 @@
 package com.forms.PersonForm.service;
 
-import com.forms.PersonForm.DAO.PersonRepository;
+import com.forms.PersonForm.DAO.IPersonDao;
+
 import com.forms.PersonForm.entities.Person;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
+
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service
 public class PersonApi implements IPersonApi{
 
     @Autowired
-    private PersonRepository personRepository;
+    private IPersonDao personDao;
+
+    private List<Person> peoplePage;
 
     @Override
-    public Page<Person> getPeople(int page) {
-        Page<Person> peoplePage = personRepository.findAll(PageRequest.of(page,5));
+    public List<Person> getPeople(int page) {
+        return personDao.getAllPerson();
+    }
+
+    @Override
+    public List<Person> findByKeyword(String kw) {
+        peoplePage = personDao.findPersonByFirstName(kw);
+        //peoplePage = personDao.findPersonByFirstName(kw,PageRequest.of(page,5));
         return peoplePage;
+    }
+
+    @Override
+    public Person save(Person person) {
+        return personDao.insertPerson(person.getFirstname(),person.getLastname(),
+                                            person.getBirthday(),person.getAddress());
+    }
+
+    @Override
+    public void delete(Long id) {
+        personDao.deletePerson(id);
     }
 
 }

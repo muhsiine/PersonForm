@@ -1,8 +1,12 @@
 package com.forms.PersonForm.service;
 
 import com.forms.PersonForm.entities.Person;
-import org.springframework.data.domain.Page;
+
+import java.util.List;
 
 public interface IPersonApi {
-    Page<Person> getPeople(int page);
+    List<Person> getPeople(int page);
+    List<Person> findByKeyword(String kw);
+    Person save(Person person);
+    void delete(Long id);
 }

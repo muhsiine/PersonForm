@@ -4,7 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf862d0-e73b-4840-9410-552ce8f81ee2" name="Changes" comment="" />
+    <list default="true" id="0bf862d0-e73b-4840-9410-552ce8f81ee2" name="Changes" comment="Integrated MyBatis(search+pagination not working yet)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_28.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3ded1f84f513a5011aa00c53c6600bc567097300" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonForm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonForm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/Controller/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/Controller/PersonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/DAO/PersonRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/PersonFormApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/PersonFormApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/entities/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/entities/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/IPersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/IPersonApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/PersonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/PersonForm/service/PersonApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/Controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/Controller/PersonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/PersonRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/PersonFormApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/PersonFormApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/entities/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/entities/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/IPersonApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/IPersonApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/PersonApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/PersonApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/people.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/people.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -22,11 +47,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="26Q35A7UNDUOe92ysxhcsW68HjX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -35,7 +59,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/workplace/EFMSWING/src/hibernate.cfg.xml" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -44,8 +70,11 @@
       <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\resources\static\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\java\com\forms\PersonForm\resources" />
+      <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\java\com\forms\PersonForm\DAO" />
+      <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\resources" />
+      <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\resources\com.forms.PersonForm.DAO" />
       <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\resources\static\css" />
-      <recent name="C:\Users\lenovo\Documents\Work Self Learning\PersonForm\src\main\resources\templates" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.forms.PersonForm.Controller" />
@@ -93,5 +122,23 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Integrated MyBatis(search+pagination not working yet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integrated MyBatis(search+pagination not working yet)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.apache.ibatis.reflection.ReflectionException" package="org.apache.ibatis.reflection" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
