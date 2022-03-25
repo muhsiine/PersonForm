@@ -11,7 +11,7 @@
     <div class="panel panel-primary">
             <div class="panel-heading">New person</div>
             <div class="panel-body">
-                <form th:action="@{/save}" method="post">
+                <form th:action="@{/save}" id="forms" method="post">
                     <div class="form-group">
                         <label class="control-label">First name</label>
                         <input type="text" name="firstname" class="form-control">
@@ -28,11 +28,11 @@
                     <label class="control-label">Adress</label>
                     <input type="text" name="address" class="form-control">
                     </div>
-                    <button type="submit" class="btn btn-primary">Add</button>
-
+                    <button type="submit" class="btn btn-primary" >Add</button>
                 </form>
             </div>
         </div>
     </div>
+<script type="text/javascript" th:src="@{js/script.js}"></script>
 </body>
 </html>
