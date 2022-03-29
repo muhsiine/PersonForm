@@ -33,7 +33,7 @@ class PersonSrvTest {
 
         List<Person> personList= personService.getPeople();
         assertNotNull(personList);
-        assertTrue(personList.size()>0);
+        assertFalse(personList.isEmpty());
     }
 
     @Test
@@ -57,7 +57,7 @@ class PersonSrvTest {
 
         List<Person> personList= personService.findByKeyword("oh");
         assertNotNull(personList);
-        assertTrue(personList.size()>0);
+        assertFalse(personList.isEmpty());
     }
 
     @Test
@@ -91,5 +91,12 @@ class PersonSrvTest {
                 ()->  personService.save(personTest));
     }
 
+    @Test
+    @DisplayName("The id of person to delete is null")
+    void deleteNotNull() {
+
+        assertThrows(RuntimeException.class,
+                ()->  personService.delete(null));
+    }
 
 }
