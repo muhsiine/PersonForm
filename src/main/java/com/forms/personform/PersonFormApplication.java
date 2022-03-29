@@ -11,5 +11,4 @@ public class PersonFormApplication {
 		SpringApplication.run(PersonFormApplication.class, args);
 	}
 
-
 }
