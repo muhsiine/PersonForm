@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf862d0-e73b-4840-9410-552ce8f81ee2" name="Changes" comment="delete duplicated file">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_oracle_database_jdbc_ojdbc8_21_3_0_0.xml" beforeDir="false" />
+    <list default="true" id="0bf862d0-e73b-4840-9410-552ce8f81ee2" name="Changes" comment="experement with tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonForm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonForm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/IPersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/IPersonDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/IPersonDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/IPersonDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/personform/dao/PersonDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/personform/service/IPersonSrv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/service/IPersonSrv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/personform/service/PersonSrv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/service/PersonSrv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/forms/personform/util/MyBatisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/forms/personform/util/MyBatisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/forms/personform/PersonFormApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/forms/personform/controller/PersonControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/forms/personform/controller/PersonControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/forms/personform/service/PersonSrvTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/forms/personform/service/PersonSrvTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/Controller/PersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/Controller/PersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/IPersonDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/DAO/PersonDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/IPersonSrv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/IPersonSrv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/PersonSrv.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/service/PersonSrv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/util/MyBatisUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/forms/PersonForm/util/MyBatisUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/forms/PersonForm/service/PersonSrvTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/forms/PersonForm/service/PersonSrvTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647341800903</updated>
-      <workItem from="1648757060964" duration="12664000" />
+      <workItem from="1648757060964" duration="13250000" />
     </task>
     <task id="LOCAL-00001" summary="Integrated MyBatis(search+pagination not working yet)">
       <created>1647938337574</created>
@@ -209,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648761351587</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="experement with tests">
+      <created>1648775895447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648775895447</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +221,8 @@
     <MESSAGE value="Integrated MyBatis(search+pagination not working yet)" />
     <MESSAGE value="Functional search (first name search)" />
     <MESSAGE value="delete duplicated file" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete duplicated file" />
+    <MESSAGE value="experement with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="experement with tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
