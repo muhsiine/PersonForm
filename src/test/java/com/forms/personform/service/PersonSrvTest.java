@@ -36,15 +36,6 @@ class PersonSrvTest {
         assertFalse(personList.isEmpty());
     }
 
-    @Test
-    @DisplayName("Null or empty list of all people should throw Exception")
-    void returnedFullListIsNull() {
-        List<Person> expectedList = new ArrayList<Person>();
-        when(personDao.getAllPerson()).thenReturn(expectedList);
-
-        assertThrows(RuntimeException.class,
-                ()->  personService.getPeople());
-    }
 
     @Test
     @DisplayName("List of people with keyword 'oh' is not null or empty")
@@ -75,11 +66,11 @@ class PersonSrvTest {
     @DisplayName("The Person saved is not null returns Person")
     void saveNotNull() {
         Person person = new Person(null,"John","Williams",null,"Avenue XXX");
-       when(personDao.insertPerson(person.getFirstname(), person.getLastname(),
-                                    person.getBirthday(),person.getAddress())).thenReturn(person);
+        when(personDao.insertPerson(person.getFirstname(), person.getLastname(),
+                                    person.getBirthday(),person.getAddress())).thenReturn(1);
 
         Person personTest =new Person(null,"John","Williams",null,"Avenue XXX");
-        assertNotNull( personService.save(personTest));
+        assertEquals(1, personService.save(personTest));
     }
 
     @Test
@@ -96,7 +87,7 @@ class PersonSrvTest {
     void deleteNotNull() {
 
         assertThrows(RuntimeException.class,
-                ()->  personService.delete(null));
+                () ->  personService.delete(null));
     }
 
 }

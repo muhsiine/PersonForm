@@ -19,6 +19,7 @@
     <insert id="insertPerson"  keyProperty="id" useGeneratedKeys="true">
         INSERT INTO person(firstname, lastname, birthday, address)
         VALUES(#{firstname}, #{lastname}, #{birthday}, #{address})
+        <selectKey/>
     </insert>
 
     <delete id="deletePerson">

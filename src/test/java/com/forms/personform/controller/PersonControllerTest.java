@@ -128,7 +128,7 @@ class PersonControllerTest {
 
         when(personService.getPeople()).thenReturn(peopleList);
         //Gives stubbing problem
-        when(personService.save(Mockito.any())).thenReturn(p);
+        when(personService.save(Mockito.any())).thenReturn(1);
         this.mockMvc.perform(
                         MockMvcRequestBuilders.post("/save")
                                 .contentType(MediaType.APPLICATION_JSON)

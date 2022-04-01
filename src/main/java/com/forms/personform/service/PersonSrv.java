@@ -18,12 +18,8 @@ public class PersonSrv implements IPersonSrv {
 
     @Override
     public List<Person> getPeople() {
-        List<Person> personList = personDao.getAllPerson();
-        if (personList != null && !personList.isEmpty()) {
-            return personList;
-        } else {
-            throw new RuntimeException("No Person was found.");
-        }
+        return personDao.getAllPerson();
+
     }
 
     @Override
@@ -34,11 +30,10 @@ public class PersonSrv implements IPersonSrv {
         } else {
             throw new RuntimeException("No Person was found.");
         }
-
     }
 
     @Override
-    public Person save(Person person) {
+    public int save(Person person) {
         if (person != null) {
             return personDao.insertPerson(person.getFirstname(), person.getLastname(),
                     person.getBirthday(), person.getAddress());
